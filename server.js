@@ -9,7 +9,7 @@ const Teacher = require('./models/teacher.js');
 const routes = require('./routes/routes.js')(Student,Teacher);
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
-const url = "mongodb://localhost/app";
+const url = "mongodb://vishnu:vishnu@ds121014.mlab.com:21014/metutu";
 
 //db connection
 mongoose.connect(url,{

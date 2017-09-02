@@ -1,16 +1,16 @@
 const mongoose = require('mongoose');
 
 var TeacherSchema = new mongoose.Schema({
- // Name:{
- // 	type:String,
- // 	lowercase:true
- // },
- // Email:{
- // 	type:String,
- // 	required:true,
- // 	unique:true,
- // 	lowercase:true
- // },
+ Name:{
+ 	type:String,
+ 	lowercase:true
+ },
+ Email:{
+ 	type:String,
+ 	required:true,
+ 	unique:true,
+ 	lowercase:true
+ },
  MobileNumber:{
  	type:Number,
  	unique:true,

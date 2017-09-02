@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 var studentSchema = new mongoose.Schema({
- // Name:{
- // 	type:String,
- // 	lowercase:true
- // },
+ Name:{
+ 	type:String,
+ 	lowercase:true
+ },
  Email:{
  	type:String,
  	required:true,
@@ -49,7 +49,7 @@ var studentSchema = new mongoose.Schema({
 
 
 
-},{collection:'studen',timestamps:true});
+},{collection:'student',timestamps:true});
 
 var StudentModel = mongoose.model('student',studentSchema);
 
