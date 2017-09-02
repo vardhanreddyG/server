@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path')
 const app = express();
 const cors = require('cors');
 const logger = require('morgan')
@@ -33,7 +34,7 @@ app.use('/api',routes)
 
 
 app.get('/',function(req,res){
-	res.send("hello")
+	res.sendFile(path.join(__dirname +'/index.html'))
 });
 
 
